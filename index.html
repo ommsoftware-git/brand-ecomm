@@ -1,0 +1,4280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="icon"
+      href="./assets/images/hero/empty-cart.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/hero/empty-cart.png"
+      type="image/x-icon"
+    />
+    <title>Brand E-commerce</title>
+
+    <!--Google font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/font-awesome.css"
+    />
+
+    <!--Slick slider css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick-theme.css"
+    />
+
+    <!-- Animate icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/animate.css"
+    />
+
+    <!-- Themify icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/themify-icons.css"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/bootstrap.css"
+    />
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="theme-color-11">
+    <!-- header start -->
+    <header class="header-style-5" id="sticky-header">
+      <div class="mobile-fix-option"></div>
+      <div class="top-header top-header-theme">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="header-contact">
+                <ul>
+                  <li>
+                    <img
+                      src="./assets/images/top-bar/Group 4.png"
+                      alt=""
+                      srcset=""
+                      width="70px"
+                    />
+                  </li>
+                  <li class="fw-bold">SAVE FOR SURE</li>
+                  <li>Lowest prices in 90 days</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 text-end">
+              <ul class="header-dropdown">
+                <li class="onhover-dropdown mobile-account">
+                  <i class="fa fas fas fa-language" aria-hidden="true"></i>
+                  English, USD
+                  <ul class="onhover-show-div">
+                    <li><a href="">English</a></li>
+                    <li><a href="">Hindi</a></li>
+                  </ul>
+                </li>
+                <li class="onhover-dropdown mobile-account">
+                  <i class="fa far fa-flag" aria-hidden="true"></i>
+                  Ship to
+                  <ul class="onhover-show-div">
+                    <li><a href="login.html">India</a></li>
+                    <li><a href="register.html">France</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="main-menu">
+              <div class="menu-left">
+                <div class="navbar d-block d-xl-none">
+                  <a href="javascript:void(0)" id="toggle-sidebar-res">
+                    <div class="bar-style">
+                      <i class="fa fa-bars sidebar-bar" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="brand-logo">
+                  <a href="index.html"
+                    ><img
+                      src="./assets/images/logo/logo.png"
+                      class="img-fluid blur-up lazyload"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <form class="form_search" role="form">
+                  <input
+                    id="query search-autocomplete"
+                    type="search"
+                    placeholder="Search ..."
+                    class="nav-search nav-search-field"
+                    aria-expanded="true"
+                  />
+                  <button
+                    type="submit"
+                    name="nav-submit-button"
+                    class="btn-search"
+                  >
+                    <i class="ti-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="menu-right pull-right">
+                <div>
+                  <div class="icon-nav">
+                    <ul>
+                      <li
+                        class="onhover-div mobile-search d-xl-none d-inline-block"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/icon/search.png"
+                            onclick="openSearch()"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-search" onclick="openSearch()"></i>
+                        </div>
+                        <div id="search-overlay" class="search-overlay">
+                          <div>
+                            <span
+                              class="closebtn"
+                              onclick="closeSearch()"
+                              title="Close Overlay"
+                              >×</span
+                            >
+                            <div class="overlay-content">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                    <form>
+                                      <div class="form-group">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="exampleInputPassword1"
+                                          placeholder="Search a Product"
+                                        />
+                                      </div>
+                                      <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                      >
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="message.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/message.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-setting">
+                        <div>
+                          <img
+                            src="./assets/images/icon/profile.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                            width="35px"
+                          /><i class="ti-settings"></i>
+                        </div>
+                        <div class="show-div setting">
+                          <ul>
+                            <li>
+                              <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                              <a href="profile.html">My Orders</a>
+                            </li>
+
+                            <li>
+                              <a href="login.html">Logout</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="wishlist.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/wishlist.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-cart">
+                        <a href="cart.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/cart.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 category-menu d-none d-xl-block">
+              <div id="toggle-sidebar" class="toggle-sidebar">
+                <i class="fa fa-bars sidebar-bar"></i>
+                <h5 class="mb-0">All category</h5>
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <div class="main-nav-center">
+                <nav id="main-nav" class="text-start">
+                  <div class="toggle-nav">
+                    <i class="fa fa-bars sidebar-bar"></i>
+                  </div>
+                  <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                    <li>
+                      <div class="mobile-back text-end">
+                        Back<i
+                          class="fa fa-angle-right ps-2"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                    </li>
+                    <li><a href="product-list.html">Hot offers</a></li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#">Gift boxes </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#"> Projects </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#"> Menu item </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="has-submenu"
+                        id="sm-16855302242701516-27"
+                        aria-haspopup="true"
+                        aria-controls="sm-16855302242701516-28"
+                        aria-expanded="false"
+                        >Help<span class="sub-arrow"></span
+                      ></a>
+                      <ul
+                        id="sm-16855302242701516-28"
+                        role="group"
+                        aria-hidden="true"
+                        aria-labelledby="sm-16855302242701516-27"
+                        aria-expanded="false"
+                        class="sm-nowrap"
+                        style="
+                          width: auto;
+                          min-width: 10em;
+                          display: none;
+                          max-width: 20em;
+                          top: auto;
+                          left: 0px;
+                          margin-left: 0px;
+                          margin-top: 0px;
+                        "
+                      >
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li>
+                          <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home section -->
+    <div class="small-section pt-res-0">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-xl-3">
+              <div
+                id="sidebar-height"
+                class="sidenav marketplace-sidebar svg-icon-menu"
+              >
+                <nav>
+                  <div>
+                    <div class="sidebar-back text-start d-xl-none d-block">
+                      <i class="fa fa-angle-left pe-2" aria-hidden="true"></i>
+                      Back
+                    </div>
+                  </div>
+                  <ul id="sub-menu" class="sm pixelstrap sm-vertical">
+                    <li>
+                      <a href="#">Automobiles</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <a href="#" class="mega-menu-banner"
+                                ><img
+                                  src="./assets/images/hero/fashion.jpg"
+                                  alt=""
+                                  class="img-fluid blur-up lazyload"
+                              /></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Clothes and wear</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Home interiors</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Computer and tech</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <a href="#" class="mega-menu-banner"
+                                ><img
+                                  src="./assets/images/hero/fashion.jpg"
+                                  alt=""
+                                  class="img-fluid blur-up lazyload"
+                              /></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Tools, equipments</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Sports and outdoor</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Animal and pets</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Machinery tools</a>
+                      <ul class="mega-menu clothing-menu">
+                        <li>
+                          <div class="row m-0">
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>women's fashion</h5>
+                                <ul>
+                                  <li><a href="#">dresses</a></li>
+                                  <li><a href="#">skirts</a></li>
+                                  <li><a href="#">westarn wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                  <li><a href="#">sport wear</a></li>
+                                </ul>
+                                <h5>men's fashion</h5>
+                                <ul>
+                                  <li><a href="#">sports wear</a></li>
+                                  <li><a href="#">western wear</a></li>
+                                  <li><a href="#">ethic wear</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <div class="link-section">
+                                <h5>accessories</h5>
+                                <ul>
+                                  <li><a href="#">fashion jewellery</a></li>
+                                  <li><a href="#">caps and hats</a></li>
+                                  <li><a href="#">precious jewellery</a></li>
+                                  <li><a href="#">necklaces</a></li>
+                                  <li><a href="#">earrings</a></li>
+                                  <li><a href="#">wrist wear</a></li>
+                                  <li><a href="#">ties</a></li>
+                                  <li><a href="#">cufflinks</a></li>
+                                  <li><a href="#">pockets squares</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-xl-4">
+                              <a href="#" class="mega-menu-banner"
+                                ><img
+                                  src="./assets/images/hero/fashion.jpg"
+                                  alt=""
+                                  class="img-fluid blur-up lazyload"
+                              /></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#">Home interiors</a>
+                      <ul>
+                        <li><a href="#">fashion jewellery</a></li>
+                        <li><a href="#">caps and hats</a></li>
+                        <li><a href="#">precious jewellery</a></li>
+                        <li>
+                          <a href="#">more..</a>
+                          <ul>
+                            <li><a href="#">necklaces</a></li>
+                            <li><a href="#">earrings</a></li>
+                            <li><a href="#">wrist wear</a></li>
+                            <li>
+                              <a href="#">accessories</a>
+                              <ul>
+                                <li><a href="#">ties</a></li>
+                                <li><a href="#">cufflinks</a></li>
+                                <li><a href="#">pockets squares</a></li>
+                                <li><a href="#">helmets</a></li>
+                                <li><a href="#">scarves</a></li>
+                                <li>
+                                  <a href="#">more...</a>
+                                  <ul>
+                                    <li><a href="#">accessory gift sets</a></li>
+                                    <li><a href="#">travel accessories</a></li>
+                                    <li><a href="#">phone cases</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li><a href="#">belts & more</a></li>
+                            <li><a href="#">wearable</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-7">
+              <!-- Home slider -->
+              <section class="p-0 layout-7">
+                <div class="slide-1 home-slider">
+                  <div>
+                    <div class="home text-start">
+                      <img
+                        src="./assets/images/hero/banner/1.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="home text-start">
+                      <img
+                        src="./assets/images/hero/banner/1.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Home slider end -->
+            </div>
+            <div class="col-xl-2 d-none d-lg-block">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <div class="home_slider_right_card p-3">
+                    <div class="row mt-2">
+                      <div class="col-4">
+                        <img
+                          src="./assets/images/icon/Avatar.png"
+                          alt=""
+                          srcset=""
+                          class="img-fluid"
+                          width="100px"
+                        />
+                      </div>
+                      <div class="col-8">
+                        <h6>Hi, user let’s get stated</h6>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary mb-2 btn-block rounded-2">
+                      Join now
+                    </button>
+                    <button class="btn btn-light mb-2 btn-block rounded-2">
+                      Log in
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="home_slider_right_card_second d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h6 class="text-white">
+                      Get US $10 off with a new supplier
+                    </h6>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="home_slider_right_card_third d-flex justify-content-center align-items-center text-center"
+                  >
+                    <h6 class="text-white">
+                      Send quotes with supplier preferences
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- home section -->
+
+    <!-- product deal section start -->
+    <section class="addtocart_count ratio_square">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-xl-4">
+              <div
+                class=""
+                style="
+                  border: 1px solid #f5f5f5;
+                  padding: 10px;
+                  height: 240px;
+                  border-radius: 5px;
+                "
+              >
+                <h3 class="title font-fraunces">Deals of the day</h3>
+                <p class="">Hygiene equipments</p>
+                <div class="timer">
+                  <p id="demo"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="col-12">
+                <div class="product_4 product-m no-arrow">
+                  <div class="product-box product-wrap product-style-1">
+                    <div class="img-wrapper">
+                      <div class="lable-block">
+                        <span class="lable3">-25%</span>
+                      </div>
+                      <div
+                        class="front d-flex justify-content-center"
+                        style="height: 125px"
+                      >
+                        <a href="product-list.html"
+                          ><img
+                            src="./assets/images/products/1.png"
+                            class="img-fluid"
+                            alt=""
+                            width="100px"
+                            height="100px"
+                        /></a>
+                      </div>
+                      <div class="cart-info cart-wrap">
+                        <a href="wishlist.html" title="Add to Wishlist"
+                          ><i class="ti-heart" aria-hidden="true"></i
+                        ></a>
+
+                        <a href="compare.html" title="Compare"
+                          ><i class="ti-reload" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="addtocart_btn">
+                        <button class="add-button add_cart" title="Add to cart">
+                          Add to Cart
+                        </button>
+                        <div class="qty-box cart_qty">
+                          <div class="input-group">
+                            <button
+                              type="button"
+                              class="btn quantity-left-minus"
+                              data-type="minus"
+                              data-field=""
+                            >
+                              <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input
+                              type="text"
+                              name="quantity"
+                              class="form-control input-number qty-input"
+                              value="1"
+                            />
+                            <button
+                              type="button"
+                              class="btn quantity-right-plus"
+                              data-type="plus"
+                              data-field=""
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-detail text-center">
+                      <a href="product-page(no-sidebar).html">
+                        <h6>Smart watches</h6>
+                      </a>
+                      <h4>$99.50 <del>$1128.00</del></h4>
+                    </div>
+                  </div>
+                  <div class="product-box product-wrap product-style-1">
+                    <div class="img-wrapper">
+                      <div class="lable-block">
+                        <span class="lable3">-15%</span>
+                      </div>
+                      <div
+                        class="front d-flex justify-content-center"
+                        style="height: 125px"
+                      >
+                        <a href="product-list.html"
+                          ><img
+                            src="./assets/images/products/2.png"
+                            class="img-fluid"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="cart-info cart-wrap">
+                        <a href="wishlist.html" title="Add to Wishlist"
+                          ><i class="ti-heart" aria-hidden="true"></i
+                        ></a>
+
+                        <a href="compare.html" title="Compare"
+                          ><i class="ti-reload" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="addtocart_btn">
+                        <button class="add-button add_cart" title="Add to cart">
+                          Add to Cart
+                        </button>
+                        <div class="qty-box cart_qty">
+                          <div class="input-group">
+                            <button
+                              type="button"
+                              class="btn quantity-left-minus"
+                              data-type="minus"
+                              data-field=""
+                            >
+                              <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input
+                              type="text"
+                              name="quantity"
+                              class="form-control input-number qty-input"
+                              value="1"
+                            />
+                            <button
+                              type="button"
+                              class="btn quantity-right-plus"
+                              data-type="plus"
+                              data-field=""
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-detail text-center">
+                      <a href="product-page(no-sidebar).html">
+                        <h6>Laptops</h6>
+                      </a>
+                      <h4>$99.50 <del>$1128.00</del></h4>
+                    </div>
+                  </div>
+                  <div class="product-box product-wrap product-style-1">
+                    <div class="img-wrapper">
+                      <div class="lable-block">
+                        <span class="lable3">-40%</span>
+                      </div>
+                      <div
+                        class="front d-flex justify-content-center"
+                        style="height: 125px"
+                      >
+                        <a href="product-list.html"
+                          ><img
+                            src="./assets/images/products/3.png"
+                            class="img-fluid"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="cart-info cart-wrap">
+                        <a href="wishlist.html" title="Add to Wishlist"
+                          ><i class="ti-heart" aria-hidden="true"></i
+                        ></a>
+
+                        <a href="compare.html" title="Compare"
+                          ><i class="ti-reload" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="addtocart_btn">
+                        <button class="add-button add_cart" title="Add to cart">
+                          Add to Cart
+                        </button>
+                        <div class="qty-box cart_qty">
+                          <div class="input-group">
+                            <button
+                              type="button"
+                              class="btn quantity-left-minus"
+                              data-type="minus"
+                              data-field=""
+                            >
+                              <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input
+                              type="text"
+                              name="quantity"
+                              class="form-control input-number qty-input"
+                              value="1"
+                            />
+                            <button
+                              type="button"
+                              class="btn quantity-right-plus"
+                              data-type="plus"
+                              data-field=""
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-detail text-center">
+                      <a href="product-page(no-sidebar).html">
+                        <h6>GoPro cameras</h6>
+                      </a>
+                      <h4>$99.50 <del>$1128.00</del></h4>
+                    </div>
+                  </div>
+                  <div class="product-box product-wrap product-style-1">
+                    <div class="img-wrapper">
+                      <div class="lable-block">
+                        <span class="lable3">-25%</span>
+                      </div>
+                      <div
+                        class="front d-flex justify-content-center"
+                        style="height: 125px"
+                      >
+                        <a href="product-list.html"
+                          ><img
+                            src="./assets/images/products/4.png"
+                            class="img-fluid"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="cart-info cart-wrap">
+                        <a href="wishlist.html" title="Add to Wishlist"
+                          ><i class="ti-heart" aria-hidden="true"></i
+                        ></a>
+
+                        <a href="compare.html" title="Compare"
+                          ><i class="ti-reload" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="addtocart_btn">
+                        <button class="add-button add_cart" title="Add to cart">
+                          Add to Cart
+                        </button>
+                        <div class="qty-box cart_qty">
+                          <div class="input-group">
+                            <button
+                              type="button"
+                              class="btn quantity-left-minus"
+                              data-type="minus"
+                              data-field=""
+                            >
+                              <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input
+                              type="text"
+                              name="quantity"
+                              class="form-control input-number qty-input"
+                              value="1"
+                            />
+                            <button
+                              type="button"
+                              class="btn quantity-right-plus"
+                              data-type="plus"
+                              data-field=""
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-detail text-center">
+                      <a href="product-page(no-sidebar).html">
+                        <h6>Headphones</h6>
+                      </a>
+                      <h4>$99.50 <del>$1128.00</del></h4>
+                    </div>
+                  </div>
+                  <div class="product-box product-wrap product-style-1">
+                    <div class="img-wrapper">
+                      <div class="lable-block">
+                        <span class="lable3">-25%</span>
+                      </div>
+                      <div
+                        class="front d-flex justify-content-center"
+                        style="height: 125px"
+                      >
+                        <a href="product-list.html"
+                          ><img
+                            src="./assets/images/products/5.png"
+                            class="img-fluid"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="cart-info cart-wrap">
+                        <a href="wishlist.html" title="Add to Wishlist"
+                          ><i class="ti-heart" aria-hidden="true"></i
+                        ></a>
+
+                        <a href="compare.html" title="Compare"
+                          ><i class="ti-reload" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                      <div class="addtocart_btn">
+                        <button class="add-button add_cart" title="Add to cart">
+                          Add to Cart
+                        </button>
+                        <div class="qty-box cart_qty">
+                          <div class="input-group">
+                            <button
+                              type="button"
+                              class="btn quantity-left-minus"
+                              data-type="minus"
+                              data-field=""
+                            >
+                              <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <input
+                              type="text"
+                              name="quantity"
+                              class="form-control input-number qty-input"
+                              value="1"
+                            />
+                            <button
+                              type="button"
+                              class="btn quantity-right-plus"
+                              data-type="plus"
+                              data-field=""
+                            >
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-detail text-center">
+                      <a href="product-page(no-sidebar).html">
+                        <h6>Smart Phones</h6>
+                      </a>
+                      <h4>$99.50 <del>$1128.00</del></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product deal section start -->
+
+    <!-- second product start -->
+    <section class="banner-padding ratio_square">
+      <div class="container">
+        <div class="row margin-default">
+          <div class="col-lg-3 d-lg-block d-none">
+            <div
+              class="h-100 bg-size"
+              style="
+                background: linear-gradient(
+                    0deg,
+                    rgba(255, 232, 186, 0.4),
+                    rgba(255, 232, 186, 0.4)
+                  ),
+                  url(./assets/images/products/image\ 92.png);
+                background-size: cover;
+                background-position: center center;
+                display: block;
+              "
+            >
+              <div class="text-center">
+                <h2>Home and outdoor</h2>
+                <a href="" class="btn btn-solid">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="row margin-default">
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/04.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/image 87.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/image 88.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/image 89.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/image 90.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="product-list.html">
+                  <div class="deal_card p-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h4>Soft chairs</h4>
+                        <p>From USD 19</p>
+                      </div>
+                      <div class="col-6">
+                        <img
+                          src="./assets/images/products/other/rasm.png"
+                          alt=""
+                          srcset=""
+                          width="80px"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- second product end -->
+
+    <!-- Tab product -->
+    <section class="addtocart_count ratio_square bg-title wo-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="theme-tab">
+              <div class="bg-title-part title-basic">
+                <h2 class="title font-fraunces">RECOMMENDATIONS FOR YOU</h2>
+                <ul class="tabs tab-title">
+                  <li class="current">
+                    <a href="tab-4">New Products</a>
+                  </li>
+                  <li class="">
+                    <a href="tab-5">Featured Products</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content-cls">
+                <div id="tab-4" class="tab-content active default">
+                  <div class="five-product no-slider row">
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/1.svg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/2.jpg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/3.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/4.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/5.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/6.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/7.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/8.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/9.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/2.jpg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-5" class="tab-content">
+                  <div class="five-product no-slider row">
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/1.svg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/2.jpg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/3.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/4.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/5.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/6.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/7.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/8.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/9.png"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                    <div class="product-box product-wrap product-style-1">
+                      <div class="img-wrapper">
+                        <div class="lable-block">
+                          <span class="lable3">new</span>
+                        </div>
+                        <div class="front" style="height: 175px">
+                          <a href="product-list.html"
+                            ><img
+                              src="./assets/images/products/cloth/2.jpg"
+                              class="img-fluid"
+                              alt=""
+                              width="150px"
+                              height="150px"
+                          /></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                          <a href="wishlist.html" title="Add to Wishlist"
+                            ><i class="ti-heart" aria-hidden="true"></i
+                          ></a>
+                          <a
+                            href="cart.html"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quick-view"
+                            title="Add To Cart"
+                            ><i class="ti-bag" aria-hidden="true"></i
+                          ></a>
+                          <a href="compare.html" title="Compare"
+                            ><i class="ti-reload" aria-hidden="true"></i
+                          ></a>
+                        </div>
+                        <div class="addtocart_btn">
+                          <div class="qty-box cart_qty">
+                            <div class="input-group">
+                              <button
+                                type="button"
+                                class="btn quantity-left-minus"
+                                data-type="minus"
+                                data-field=""
+                              >
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                              </button>
+                              <input
+                                type="text"
+                                name="quantity"
+                                class="form-control input-number qty-input"
+                                value="1"
+                              />
+                              <button
+                                type="button"
+                                class="btn quantity-right-plus"
+                                data-type="plus"
+                                data-field=""
+                              >
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <a href="product-page(no-sidebar).html">
+                          <h6>T-shirts with multiple colors, for men</h6>
+                        </a>
+                        <h4>$10.30<del>$12.40</del></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tab product end -->
+
+    <!-- banner section start -->
+    <section class="container">
+      <div class="full-banner small-banner p-left">
+        <img
+          src="./assets/images/hero/banner/form-banner.jpg"
+          alt=""
+          class="bg-img blur-up lazyload"
+        />
+        <div class="container">
+          <div class="row p-3">
+            <div class="col-lg-6 col-12">
+              <h2 class="text-white">
+                An easy way to send requests to all suppliers
+              </h2>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12 card p-3">
+              <h3>Send quote to suppliers</h3>
+              <form class="theme-form">
+                <div class="form-row row gy-3">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id=""
+                      placeholder="What item you need?"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      placeholder="Type more details"
+                      id=""
+                      rows="6"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id=""
+                      placeholder="Quantity"
+                      required=""
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <select name="" id="" class="form-control form-select">
+                      <option value="">Select PCS</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-solid" type="submit">
+                      Send inquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- recently viewed section start -->
+    <section class="addtocart_count ratio_square">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-basic">
+              <h2 class="title font-fraunces">recently viewd</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="product-5 product-m no-arrow">
+              <div class="product-box product-wrap product-style-1">
+                <div class="img-wrapper">
+                  <div class="lable-block">
+                    <span class="lable3">-25%</span>
+                  </div>
+                  <div
+                    class="front d-flex justify-content-center"
+                    style="height: 120px"
+                  >
+                    <a href="product-list.html"
+                      ><img
+                        src="./assets/images/products/1.png"
+                        class="img-fluid"
+                        alt=""
+                        width="100px"
+                    /></a>
+                  </div>
+                  <div class="cart-info cart-wrap">
+                    <a href="wishlist.html" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="addtocart_btn">
+                    <button class="add-button add_cart" title="Add to cart">
+                      Add to Cart
+                    </button>
+                    <div class="qty-box cart_qty">
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn quantity-left-minus"
+                          data-type="minus"
+                          data-field=""
+                        >
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number qty-input"
+                          value="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn quantity-right-plus"
+                          data-type="plus"
+                          data-field=""
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <a href="product-page(no-sidebar).html">
+                    <h6>Smart watches</h6>
+                  </a>
+                  <h4>$99.50 <del>$1128.00</del></h4>
+                </div>
+              </div>
+              <div class="product-box product-wrap product-style-1">
+                <div class="img-wrapper">
+                  <div
+                    class="front d-flex justify-content-center"
+                    style="height: 120px"
+                  >
+                    <a href="product-list.html"
+                      ><img
+                        src="./assets/images/products/2.png"
+                        class="img-fluid"
+                        alt=""
+                        width="100px"
+                    /></a>
+                  </div>
+                  <div class="cart-info cart-wrap">
+                    <a href="wishlist.html" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="addtocart_btn">
+                    <button class="add-button add_cart" title="Add to cart">
+                      Add to Cart
+                    </button>
+                    <div class="qty-box cart_qty">
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn quantity-left-minus"
+                          data-type="minus"
+                          data-field=""
+                        >
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number qty-input"
+                          value="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn quantity-right-plus"
+                          data-type="plus"
+                          data-field=""
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <a href="product-page(no-sidebar).html">
+                    <h6>Smart watches</h6>
+                  </a>
+                  <h4>$99.50 <del>$1128.00</del></h4>
+                </div>
+              </div>
+              <div class="product-box product-wrap product-style-1">
+                <div class="img-wrapper">
+                  <div
+                    class="front d-flex justify-content-center"
+                    style="height: 120px"
+                  >
+                    <a href="product-list.html"
+                      ><img
+                        src="./assets/images/products/3.png"
+                        class="img-fluid"
+                        alt=""
+                        width="100px"
+                    /></a>
+                  </div>
+                  <div class="cart-info cart-wrap">
+                    <a href="wishlist.html" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="addtocart_btn">
+                    <button class="add-button add_cart" title="Add to cart">
+                      Add to Cart
+                    </button>
+                    <div class="qty-box cart_qty">
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn quantity-left-minus"
+                          data-type="minus"
+                          data-field=""
+                        >
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number qty-input"
+                          value="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn quantity-right-plus"
+                          data-type="plus"
+                          data-field=""
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <a href="product-page(no-sidebar).html">
+                    <h6>Smart watches</h6>
+                  </a>
+                  <h4>$99.50 <del>$1128.00</del></h4>
+                </div>
+              </div>
+              <div class="product-box product-wrap product-style-1">
+                <div class="img-wrapper">
+                  <div
+                    class="front d-flex justify-content-center"
+                    style="height: 120px"
+                  >
+                    <a href="product-list.html"
+                      ><img
+                        src="./assets/images/products/4.png"
+                        class="img-fluid"
+                        alt=""
+                        width="100px"
+                    /></a>
+                  </div>
+                  <div class="cart-info cart-wrap">
+                    <a href="wishlist.html" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="addtocart_btn">
+                    <button class="add-button add_cart" title="Add to cart">
+                      Add to Cart
+                    </button>
+                    <div class="qty-box cart_qty">
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn quantity-left-minus"
+                          data-type="minus"
+                          data-field=""
+                        >
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number qty-input"
+                          value="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn quantity-right-plus"
+                          data-type="plus"
+                          data-field=""
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <a href="product-page(no-sidebar).html">
+                    <h6>Smart watches</h6>
+                  </a>
+                  <h4>$99.50 <del>$1128.00</del></h4>
+                </div>
+              </div>
+              <div class="product-box product-wrap product-style-1">
+                <div class="img-wrapper">
+                  <div class="lable-block">
+                    <span class="lable3">-25%</span>
+                  </div>
+                  <div
+                    class="front d-flex justify-content-center"
+                    style="height: 120px"
+                  >
+                    <a href="product-list.html"
+                      ><img
+                        src="./assets/images/products/5.png"
+                        class="img-fluid"
+                        alt=""
+                        width="100px"
+                    /></a>
+                  </div>
+                  <div class="cart-info cart-wrap">
+                    <a href="wishlist.html" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                  <div class="addtocart_btn">
+                    <button class="add-button add_cart" title="Add to cart">
+                      Add to Cart
+                    </button>
+                    <div class="qty-box cart_qty">
+                      <div class="input-group">
+                        <button
+                          type="button"
+                          class="btn quantity-left-minus"
+                          data-type="minus"
+                          data-field=""
+                        >
+                          <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number qty-input"
+                          value="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn quantity-right-plus"
+                          data-type="plus"
+                          data-field=""
+                        >
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <a href="product-page(no-sidebar).html">
+                    <h6>Smart watches</h6>
+                  </a>
+                  <h4>$99.50 <del>$1128.00</del></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- recently viewed section end -->
+
+    <!-- blog section -->
+    <section
+      class="blog section-b-space gym-blog ratio3_2 slick-default-margin"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-basic">
+              <h2 class="title font-fraunces">Our extra services</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="slide-4 no-arrow">
+              <div class="card" style="height: 285px">
+                <a href="services-details.html">
+                  <div class="basic-effect">
+                    <div>
+                      <img
+                        src="./assets/images/services/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                        alt=""
+                      />
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="blog-details p-3">
+                  <a href="#">
+                    <p>Source from Industry Hubs</p>
+                  </a>
+                  <p class="text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium dolores ratione non quisquam at recusandae
+                    facere aliquam illum possimus aliquid?
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="height: 285px">
+                <a href="services-details.html">
+                  <div class="basic-effect">
+                    <div>
+                      <img
+                        src="./assets/images/services/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                        alt=""
+                      />
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="blog-details p-3">
+                  <a href="#">
+                    <p>Customize Your Products</p>
+                  </a>
+                  <p class="text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium dolores ratione non quisquam at recusandae
+                    facere aliquam illum possimus aliquid?
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="height: 285px">
+                <a href="services-details.html">
+                  <div class="basic-effect">
+                    <div>
+                      <img
+                        src="./assets/images/services/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                        alt=""
+                      />
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="blog-details p-3">
+                  <a href="#">
+                    <p>Fast, reliable shipping by ocean or air</p>
+                  </a>
+                  <p class="text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium dolores ratione non quisquam at recusandae
+                    facere aliquam illum possimus aliquid?
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="height: 285px">
+                <a href="services-details.html">
+                  <div class="basic-effect">
+                    <div>
+                      <img
+                        src="./assets/images/services/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                        alt=""
+                      />
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+                <div class="blog-details p-3">
+                  <a href="#">
+                    <p>Product monitoring and inspection</p>
+                  </a>
+                  <p class="text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium dolores ratione non quisquam at recusandae
+                    facere aliquam illum possimus aliquid?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- Supplier section -->
+
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-basic">
+            <h2 class="title font-fraunces">Suppliers by region</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row gy-3">
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/1.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Arabic Emirates</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/2.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Australia</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/3.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>United States</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/4.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Russia</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/5.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Italy</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/6.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Denmark</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/7.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>France</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/8.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>China</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div
+                class="d-flex justify-content-center align-items-center h-100"
+              >
+                <div class="row">
+                  <div class="col-3 col-lg-3">
+                    <img
+                      src="./assets/images/flags/9.png"
+                      alt=""
+                      srcset=""
+                      width="30px"
+                      class="pt-2"
+                    />
+                  </div>
+                  <div class="col-lg-9 col-9">
+                    <h6>Great Britain</h6>
+                    <p style="line-height: 0px">shopname.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supplier section end -->
+
+    <!-- footer start -->
+    <footer class="footer-light">
+      <div class="light-layout">
+        <div class="container">
+          <section class="small-section border-section border-top-0">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="subscribe">
+                  <div>
+                    <h4>Subscribe on our newsletter</h4>
+                    <p>
+                      Get daily news on upcoming offers from many suppliers ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <form
+                  action=""
+                  class="form-inline subscribe-form auth-form needs-validation"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                >
+                  <div class="form-group mx-sm-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="EMAIL"
+                      id="mce-EMAIL"
+                      placeholder="Enter your email"
+                      required="required"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-solid" id="mc-submit">
+                    subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="section-b-space light-layout">
+        <div class="container">
+          <div class="row footer-theme partition-f">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-title footer-mobile-title">
+                <h4>about</h4>
+              </div>
+              <div class="footer-contant">
+                <div class="footer-logo">
+                  <img
+                    src="./assets/images/logo/logo.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p>
+                  Best information about the company gies here but now lorem
+                  ipsum is
+                </p>
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fab fa-youtube" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col offset-xl-1">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>Quick Links</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>Legal</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="return-policy.html">shipping & return</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li>
+                      <a href="terms&conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li><a href="profile.html">My Orders</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>Get app</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul class="contact-list">
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/app-btn/1.png"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/app-btn/2.png"
+                          alt=""
+                          srcset=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="footer-end">
+                <p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> 2023-24
+                  Ecommerce.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="payment-card-bottom">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="../assets/images/icon/visa.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../assets/images/icon/mastercard.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../assets/images/icon/paypal.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="../assets/images/icon/american-express.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../assets/images/icon/discover.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- tap to top -->
+    <div class="tap-top top-cls">
+      <div>
+        <i class="fa fa-angle-double-up"></i>
+      </div>
+    </div>
+    <!-- tap to top end -->
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/slick-animation.min.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/sticky-menu.js"></script>
+
+    <!-- lazyload js-->
+    <script src="./assets/js/lazysizes.min.js"></script>
+
+    <!-- Timer js-->
+    <script src="./assets/js/timer.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="./assets/js/bootstrap-notify.min.js"></script>
+
+    <!-- Theme js-->
+    <script src="./assets/js/theme-setting.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/custom-slick-animated.js"></script>
+
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $("#exampleModal").modal("show");
+        }, 2500);
+      });
+
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

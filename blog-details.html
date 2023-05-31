@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="icon"
+      href="./assets/images/hero/empty-cart.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/hero/empty-cart.png"
+      type="image/x-icon"
+    />
+    <title>Brand E-commerce</title>
+
+    <!--Google font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/font-awesome.css"
+    />
+
+    <!--Slick slider css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick-theme.css"
+    />
+
+    <!-- Animate icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/animate.css"
+    />
+
+    <!-- Themify icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/themify-icons.css"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/bootstrap.css"
+    />
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="theme-color-1">
+    <!-- header start -->
+    <header class="header-style-5" id="sticky-header">
+      <div class="mobile-fix-option"></div>
+      <div class="top-header top-header-theme">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="header-contact">
+                <ul>
+                  <li>
+                    <img
+                      src="./assets/images/top-bar/Group 4.png"
+                      alt=""
+                      srcset=""
+                      width="70px"
+                    />
+                  </li>
+                  <li class="fw-bold">SAVE FOR SURE</li>
+                  <li>Lowest prices in 90 days</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 text-end">
+              <ul class="header-dropdown">
+                <li class="onhover-dropdown mobile-account">
+                  <i class="fa fas fas fa-language" aria-hidden="true"></i>
+                  English, USD
+                  <ul class="onhover-show-div">
+                    <li><a href="">English</a></li>
+                    <li><a href="">Hindi</a></li>
+                  </ul>
+                </li>
+                <li class="onhover-dropdown mobile-account">
+                  <i class="fa far fa-flag" aria-hidden="true"></i>
+                  Ship to
+                  <ul class="onhover-show-div">
+                    <li><a href="login.html">India</a></li>
+                    <li><a href="register.html">France</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="main-menu">
+              <div class="menu-left">
+                <div class="navbar d-block d-xl-none">
+                  <a href="javascript:void(0)" id="toggle-sidebar-res">
+                    <div class="bar-style">
+                      <i class="fa fa-bars sidebar-bar" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="brand-logo">
+                  <a href="index.html"
+                    ><img
+                      src="./assets/images/logo/logo.png"
+                      class="img-fluid blur-up lazyload"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <form class="form_search" role="form">
+                  <input
+                    id="query search-autocomplete"
+                    type="search"
+                    placeholder="Search ..."
+                    class="nav-search nav-search-field"
+                    aria-expanded="true"
+                  />
+                  <button
+                    type="submit"
+                    name="nav-submit-button"
+                    class="btn-search"
+                  >
+                    <i class="ti-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="menu-right pull-right">
+                <div>
+                  <div class="icon-nav">
+                    <ul>
+                      <li
+                        class="onhover-div mobile-search d-xl-none d-inline-block"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/icon/search.png"
+                            onclick="openSearch()"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-search" onclick="openSearch()"></i>
+                        </div>
+                        <div id="search-overlay" class="search-overlay">
+                          <div>
+                            <span
+                              class="closebtn"
+                              onclick="closeSearch()"
+                              title="Close Overlay"
+                              >×</span
+                            >
+                            <div class="overlay-content">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                    <form>
+                                      <div class="form-group">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="exampleInputPassword1"
+                                          placeholder="Search a Product"
+                                        />
+                                      </div>
+                                      <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                      >
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="message.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/message.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-setting">
+                        <div>
+                          <img
+                            src="./assets/images/icon/profile.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                            width="35px"
+                          /><i class="ti-settings"></i>
+                        </div>
+                        <div class="show-div setting">
+                          <ul>
+                            <li>
+                              <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                              <a href="profile.html">My Orders</a>
+                            </li>
+
+                            <li>
+                              <a href="login.html">Logout</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="wishlist.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/wishlist.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-cart">
+                        <a href="cart.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/cart.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 category-menu d-none d-xl-block">
+              <div id="toggle-sidebar" class="toggle-sidebar">
+                <i class="fa fa-bars sidebar-bar"></i>
+                <h5 class="mb-0">All category</h5>
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <div class="main-nav-center">
+                <nav id="main-nav" class="text-start">
+                  <div class="toggle-nav">
+                    <i class="fa fa-bars sidebar-bar"></i>
+                  </div>
+                  <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                    <li>
+                      <div class="mobile-back text-end">
+                        Back<i
+                          class="fa fa-angle-right ps-2"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                    </li>
+                    <li><a href="product-list.html">Hot offers</a></li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#">Gift boxes </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#"> Projects </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mega" id="hover-cls">
+                      <a href="#"> Menu item </a>
+                      <ul class="mega-menu full-mega-menu">
+                        <li>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Automobiles</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html"
+                                          >Automobiles 1</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col mega-box">
+                                <div class="link-section">
+                                  <div class="menu-title">
+                                    <h5>Clothes and wear</h5>
+                                  </div>
+                                  <div class="menu-content">
+                                    <ul>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                      <li>
+                                        <a href="product-list.html">Dresses </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="has-submenu"
+                        id="sm-16855302242701516-27"
+                        aria-haspopup="true"
+                        aria-controls="sm-16855302242701516-28"
+                        aria-expanded="false"
+                        >Help<span class="sub-arrow"></span
+                      ></a>
+                      <ul
+                        id="sm-16855302242701516-28"
+                        role="group"
+                        aria-hidden="true"
+                        aria-labelledby="sm-16855302242701516-27"
+                        aria-expanded="false"
+                        class="sm-nowrap"
+                        style="
+                          width: auto;
+                          min-width: 10em;
+                          display: none;
+                          max-width: 20em;
+                          top: auto;
+                          left: 0px;
+                          margin-left: 0px;
+                          margin-top: 0px;
+                        "
+                      >
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li>
+                          <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="page-title">
+              <h2>Blog Details</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <nav aria-label="breadcrumb" class="theme-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Blog Details
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb End -->
+    <!--section start-->
+    <section class="faq-section section-b-space">
+      <div class="container">
+        <div class="card p-4">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-12">
+              <img
+                src="./assets/images/blog/1.png"
+                alt=""
+                srcset=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 col-12">
+              <div>
+                <h3>Subscribe Our Blog</h3>
+                <hr />
+                <p>
+                  Subscribe to our email newsletter for Plant Tips, Gardening
+                  Etiquette and amazing selection of our houseplants
+                </p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subscribe for Plant Happiness"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-primary rounded-2"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+                <h3>Recent Posts</h3>
+                <hr />
+                <p>
+                  11 Easy-to-Grow Plants for Beginners Touch Me Not Plant (Chui
+                  Mui Plant) Important Facts and Uses
+                </p>
+                <p>
+                  Rafflesia Arnoldii – Biggest Flower in the World Insulin Plant
+                  (Costus Igneus) for Diabetes {Controls Blood Sugar}
+                </p>
+                <p>
+                  English Ivy/Hedera Helix Plant Growing and Care Tips, Medical
+                  Uses
+                </p>
+              </div>
+            </div>
+          </div>
+          <p style="text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+          </p>
+          <p style="text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+          </p>
+          <p style="text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+          </p>
+          <p style="text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section ends-->
+
+    <!-- banner start -->
+    <section style="height: 250px">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center align-items-center"
+          style="
+            background-image: url(./assets/images/hero/bottom-banner.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border-radius: 5px;
+            height: 120px;
+          "
+        >
+          <div class="col-8">
+            <h3 class="text-white">Super discount on more than 100 USD</h3>
+            <p class="text-white">
+              Have you ever finally just write dummy info
+            </p>
+          </div>
+          <div class="col-2">
+            <a href="" class="btn btn-warning rounded-2">Shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- policy model -->
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="./assets/js/360view.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- lazyload js-->
+    <script src="./assets/js/lazysizes.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+
+    <!-- timer js-->
+    <script src="./assets/js/timer.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="./assets/js/bootstrap-notify.min.js"></script>
+
+    <!-- Theme js-->
+    <script src="./assets/js/theme-setting.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
